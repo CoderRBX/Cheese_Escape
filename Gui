@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local Cheese_Escape = Instance.new("ScreenGui")
 local CheeseFrame = Instance.new("ImageLabel")
 local X = Instance.new("ImageButton")
