@@ -1,0 +1,610 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Cheese_Escape = Instance.new("ScreenGui")
+local CheeseFrame = Instance.new("ImageLabel")
+local X = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+local keys = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local rat = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local plrs = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UICorner_6 = Instance.new("UICorner")
+local Keys = Instance.new("ImageLabel")
+local UICorner_7 = Instance.new("UICorner")
+local k1 = Instance.new("TextButton")
+local k2 = Instance.new("TextButton")
+local k3 = Instance.new("TextButton")
+local k4 = Instance.new("TextButton")
+local k5 = Instance.new("TextButton")
+local k8 = Instance.new("TextButton")
+local k9 = Instance.new("TextButton")
+local k7 = Instance.new("TextButton")
+local k6 = Instance.new("TextButton")
+local k10 = Instance.new("TextButton")
+local X_2 = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+Cheese_Escape.Name = "Cheese_Escape"
+Cheese_Escape.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Cheese_Escape.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+CheeseFrame.Name = "CheeseFrame"
+CheeseFrame.Parent = Cheese_Escape
+CheeseFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheeseFrame.BackgroundTransparency = 1.000
+CheeseFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheeseFrame.BorderSizePixel = 0
+CheeseFrame.Position = UDim2.new(0.229000002, 0, 0.209999993, 0)
+CheeseFrame.Size = UDim2.new(0, 574, 0, 376)
+CheeseFrame.Image = "rbxassetid://16936956891"
+CheeseFrame.ImageTransparency = 0.300
+
+X.Name = "X"
+X.Parent = CheeseFrame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0.912891984, 0, 0, 0)
+X.Size = UDim2.new(0, 50, 0, 49)
+X.Image = "rbxassetid://2665356190"
+
+UICorner.Parent = X
+
+keys.Name = "keys"
+keys.Parent = CheeseFrame
+keys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+keys.BackgroundTransparency = 1.000
+keys.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keys.BorderSizePixel = 0
+keys.Position = UDim2.new(0, 0, 0.191489369, 0)
+keys.Size = UDim2.new(0, 574, 0, 50)
+keys.Font = Enum.Font.Unknown
+keys.Text = "Teleport To Keys"
+keys.TextColor3 = Color3.fromRGB(255, 255, 255)
+keys.TextScaled = true
+keys.TextSize = 14.000
+keys.TextStrokeTransparency = 0.000
+keys.TextWrapped = true
+
+UICorner_2.Parent = keys
+
+rat.Name = "rat"
+rat.Parent = CheeseFrame
+rat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rat.BackgroundTransparency = 1.000
+rat.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rat.BorderSizePixel = 0
+rat.Position = UDim2.new(0, 0, 0.385638297, 0)
+rat.Size = UDim2.new(0, 574, 0, 50)
+rat.Font = Enum.Font.Unknown
+rat.Text = "Highlight Rat"
+rat.TextColor3 = Color3.fromRGB(255, 255, 255)
+rat.TextScaled = true
+rat.TextSize = 14.000
+rat.TextStrokeTransparency = 0.000
+rat.TextWrapped = true
+
+UICorner_3.Parent = rat
+
+plrs.Name = "plrs"
+plrs.Parent = CheeseFrame
+plrs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+plrs.BackgroundTransparency = 1.000
+plrs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+plrs.BorderSizePixel = 0
+plrs.Position = UDim2.new(0, 0, 0.603723407, 0)
+plrs.Size = UDim2.new(0, 574, 0, 50)
+plrs.Font = Enum.Font.Unknown
+plrs.Text = "Highlight Players"
+plrs.TextColor3 = Color3.fromRGB(255, 255, 255)
+plrs.TextScaled = true
+plrs.TextSize = 14.000
+plrs.TextStrokeTransparency = 0.000
+plrs.TextWrapped = true
+
+UICorner_4.Parent = plrs
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = CheeseFrame
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.BackgroundTransparency = 1.000
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0, 0, 0.832446814, 0)
+InfiniteYield.Size = UDim2.new(0, 574, 0, 50)
+InfiniteYield.Font = Enum.Font.Unknown
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextStrokeTransparency = 0.000
+InfiniteYield.TextWrapped = true
+
+UICorner_5.Parent = InfiniteYield
+
+UICorner_6.Parent = CheeseFrame
+
+Keys.Name = "Keys"
+Keys.Parent = Cheese_Escape
+Keys.BackgroundTransparency = 1.000
+Keys.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keys.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Keys.BorderSizePixel = 0
+Keys.Position = UDim2.new(0.229000002, 0, 0.209999993, 0)
+Keys.Size = UDim2.new(0, 574, 0, 376)
+Keys.Image = "rbxassetid://16936956891"
+Keys.Visible = false
+UICorner_7.Parent = Keys
+
+k1.Name = "k1"
+k1.Parent = Keys
+k1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k1.BackgroundTransparency = 1.000
+k1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k1.BorderSizePixel = 0
+k1.Position = UDim2.new(0.0174216032, 0, 0.191489369, 0)
+k1.Size = UDim2.new(0, 270, 0, 50)
+k1.Font = Enum.Font.Unknown
+k1.Text = "Cheese 1"
+k1.TextColor3 = Color3.fromRGB(255, 255, 255)
+k1.TextScaled = true
+k1.TextSize = 14.000
+k1.TextStrokeTransparency = 0.000
+k1.TextWrapped = true
+
+k2.Name = "k2"
+k2.Parent = Keys
+k2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k2.BackgroundTransparency = 1.000
+k2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k2.BorderSizePixel = 0
+k2.Position = UDim2.new(0.0174216032, 0, 0.324468076, 0)
+k2.Size = UDim2.new(0, 270, 0, 50)
+k2.Font = Enum.Font.Unknown
+k2.Text = "Cheese 2"
+k2.TextColor3 = Color3.fromRGB(255, 255, 255)
+k2.TextScaled = true
+k2.TextSize = 14.000
+k2.TextStrokeTransparency = 0.000
+k2.TextWrapped = true
+
+k3.Name = "k3"
+k3.Parent = Keys
+k3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k3.BackgroundTransparency = 1.000
+k3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k3.BorderSizePixel = 0
+k3.Position = UDim2.new(0.0156794433, 0, 0.457446814, 0)
+k3.Size = UDim2.new(0, 270, 0, 50)
+k3.Font = Enum.Font.Unknown
+k3.Text = "Cheese 3"
+k3.TextColor3 = Color3.fromRGB(255, 255, 255)
+k3.TextScaled = true
+k3.TextSize = 14.000
+k3.TextStrokeTransparency = 0.000
+k3.TextWrapped = true
+
+k4.Name = "k4"
+k4.Parent = Keys
+k4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k4.BackgroundTransparency = 1.000
+k4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k4.BorderSizePixel = 0
+k4.Position = UDim2.new(0.0156794433, 0, 0.622340441, 0)
+k4.Size = UDim2.new(0, 270, 0, 50)
+k4.Font = Enum.Font.Unknown
+k4.Text = "Cheese 4"
+k4.TextColor3 = Color3.fromRGB(255, 255, 255)
+k4.TextScaled = true
+k4.TextSize = 14.000
+k4.TextStrokeTransparency = 0.000
+k4.TextWrapped = true
+
+k5.Name = "k5"
+k5.Parent = Keys
+k5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k5.BackgroundTransparency = 1.000
+k5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k5.BorderSizePixel = 0
+k5.Position = UDim2.new(0.0174216032, 0, 0.755319178, 0)
+k5.Size = UDim2.new(0, 270, 0, 50)
+k5.Font = Enum.Font.Unknown
+k5.Text = "Cheese 5"
+k5.TextColor3 = Color3.fromRGB(255, 255, 255)
+k5.TextScaled = true
+k5.TextSize = 14.000
+k5.TextStrokeTransparency = 0.000
+k5.TextWrapped = true
+
+k8.Name = "k8"
+k8.Parent = Keys
+k8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k8.BackgroundTransparency = 1.000
+k8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k8.BorderSizePixel = 0
+k8.Position = UDim2.new(0.56445992, 0, 0.755319178, 0)
+k8.Size = UDim2.new(0, 251, 0, 50)
+k8.Font = Enum.Font.Unknown
+k8.Text = "Cheese 10"
+k8.TextColor3 = Color3.fromRGB(255, 255, 255)
+k8.TextScaled = true
+k8.TextSize = 14.000
+k8.TextStrokeTransparency = 0.000
+k8.TextWrapped = true
+
+k9.Name = "k9"
+k9.Parent = Keys
+k9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k9.BackgroundTransparency = 1.000
+k9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k9.BorderSizePixel = 0
+k9.Position = UDim2.new(0.562717795, 0, 0.191489369, 0)
+k9.Size = UDim2.new(0, 251, 0, 50)
+k9.Font = Enum.Font.Unknown
+k9.Text = "Cheese 6"
+k9.TextColor3 = Color3.fromRGB(255, 255, 255)
+k9.TextScaled = true
+k9.TextSize = 14.000
+k9.TextStrokeTransparency = 0.000
+k9.TextWrapped = true
+
+k7.Name = "k7"
+k7.Parent = Keys
+k7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k7.BackgroundTransparency = 1.000
+k7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k7.BorderSizePixel = 0
+k7.Position = UDim2.new(0.56445992, 0, 0.324468076, 0)
+k7.Size = UDim2.new(0, 251, 0, 50)
+k7.Font = Enum.Font.Unknown
+k7.Text = "Cheese 7"
+k7.TextColor3 = Color3.fromRGB(255, 255, 255)
+k7.TextScaled = true
+k7.TextSize = 14.000
+k7.TextStrokeTransparency = 0.000
+k7.TextWrapped = true
+
+k6.Name = "k6"
+k6.Parent = Keys
+k6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k6.BackgroundTransparency = 1.000
+k6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k6.BorderSizePixel = 0
+k6.Position = UDim2.new(0.562717795, 0, 0.457446814, 0)
+k6.Size = UDim2.new(0, 251, 0, 50)
+k6.Font = Enum.Font.Unknown
+k6.Text = "Cheese 8"
+k6.TextColor3 = Color3.fromRGB(255, 255, 255)
+k6.TextScaled = true
+k6.TextSize = 14.000
+k6.TextStrokeTransparency = 0.000
+k6.TextWrapped = true
+
+k10.Name = "k10"
+k10.Parent = Keys
+k10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+k10.BackgroundTransparency = 1.000
+k10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+k10.BorderSizePixel = 0
+k10.Position = UDim2.new(0.562717795, 0, 0.622340441, 0)
+k10.Size = UDim2.new(0, 251, 0, 50)
+k10.Font = Enum.Font.Unknown
+k10.Text = "Cheese 9"
+k10.TextColor3 = Color3.fromRGB(255, 255, 255)
+k10.TextScaled = true
+k10.TextSize = 14.000
+k10.TextStrokeTransparency = 0.000
+k10.TextWrapped = true
+
+X_2.Name = "X"
+X_2.Parent = Keys
+X_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X_2.BackgroundTransparency = 1.000
+X_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X_2.BorderSizePixel = 0
+X_2.Position = UDim2.new(0.912891984, 0, 0, 0)
+X_2.Size = UDim2.new(0, 50, 0, 49)
+X_2.Image = "rbxassetid://2665356190"
+
+UICorner_8.Parent = X_2
+
+-- Scripts:
+
+local function RMWM_fake_script() -- X.LocalScript 
+	local script = Instance.new('LocalScript', X)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local tf = script.Parent.Parent
+		tf.Visible = false
+	
+	end)
+end
+coroutine.wrap(RMWM_fake_script)()
+local function HZBUA_fake_script() -- keys.LocalScript 
+	local script = Instance.new('LocalScript', keys)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local bf = script.Parent.Parent.Parent.Keys
+		bf.Visible = not bf.Visible
+	end)
+end
+coroutine.wrap(HZBUA_fake_script)()
+local function QKYSADR_fake_script() -- rat.LocalScript 
+	local script = Instance.new('LocalScript', rat)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if workspace.Mouse:FindFirstChild("Mouse_Highlight") then
+			workspace.Mouse.Mouse_Highlight:Destroy()
+			local h = Instance.new("Highlight", workspace.Mouse)
+			h.Name = "Mouse_Highlight"
+			h.FillColor = Color3.new(0, 1, 0)
+			h.OutlineColor = Color3.new(0, 1, 0)
+			h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		else
+			local h = Instance.new("Highlight", workspace.Mouse)
+			h.Name = "Mouse_Highlight"
+			h.FillColor = Color3.new(0, 1, 0)
+			h.OutlineColor = Color3.new(0, 1, 0)
+			h.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+		end
+	end)
+end
+coroutine.wrap(QKYSADR_fake_script)()
+local function FXUYCN_fake_script() -- plrs.LocalScript 
+	local script = Instance.new('LocalScript', plrs)
+
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	local Button = script.Parent
+	
+	local function highlightCharacter(character)
+		if not character:FindFirstChild("Highlight") then
+			local highlight = Instance.new("Highlight")
+			highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Green
+			highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+			highlight.OutlineTransparency = 0
+			highlight.Parent = character
+		else
+			character.Highlight:Destroy()
+			local highlight = Instance.new("Highlight")
+			highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Green
+			highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+			highlight.OutlineTransparency = 0
+			highlight.Parent = character
+		end
+	end
+	
+	local function startHighlighting()
+		for _, player in pairs(Players:GetPlayers()) do
+			if player ~= LocalPlayer then
+				if player.Character then
+					highlightCharacter(player.Character)
+				end
+				player.CharacterAdded:Connect(highlightCharacter)
+			end
+		end
+	
+		Players.PlayerAdded:Connect(function(player)
+			if player ~= LocalPlayer then
+				player.CharacterAdded:Connect(highlightCharacter)
+			end
+		end)
+	end
+	
+	Button.MouseButton1Click:Connect(function()
+		startHighlighting()
+	end)
+	
+end
+coroutine.wrap(FXUYCN_fake_script)()
+local function JGTLOO_fake_script() -- CheeseFrame.LocalScript 
+	local script = Instance.new('LocalScript', CheeseFrame)
+
+	local frame = script.Parent
+	local dragging = false
+	local dragInput, mousePos, framePos
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			mousePos = input.Position
+			framePos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - mousePos
+			frame.Position = UDim2.new(
+				framePos.X.Scale,
+				framePos.X.Offset + delta.X,
+				framePos.Y.Scale,
+				framePos.Y.Offset + delta.Y
+			)
+		end
+	end)
+	
+end
+coroutine.wrap(JGTLOO_fake_script)()
+local function YPIPRPL_fake_script() -- k1.LocalScript 
+	local script = Instance.new('LocalScript', k1)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(41.21, 22, -21.95))
+	end)
+end
+coroutine.wrap(YPIPRPL_fake_script)()
+local function GXRYDEM_fake_script() -- k2.LocalScript 
+	local script = Instance.new('LocalScript', k2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-273.602, 1.693, -54.529))
+	end)
+end
+coroutine.wrap(GXRYDEM_fake_script)()
+local function PQSGV_fake_script() -- k3.LocalScript 
+	local script = Instance.new('LocalScript', k3)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-273.802, 1.693, -14.829))
+	end)
+end
+coroutine.wrap(PQSGV_fake_script)()
+local function BADZUF_fake_script() -- k4.LocalScript 
+	local script = Instance.new('LocalScript', k4)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-254.89, 46, -166.75))
+	end)
+end
+coroutine.wrap(BADZUF_fake_script)()
+local function RGFDW_fake_script() -- k5.LocalScript 
+	local script = Instance.new('LocalScript', k5)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-276.03, 49.79, -221.64))
+	end)
+end
+coroutine.wrap(RGFDW_fake_script)()
+local function EWDAP_fake_script() -- k8.LocalScript 
+	local script = Instance.new('LocalScript', k8)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-294.19, 46, -119.65))
+	end)
+end
+
+coroutine.wrap(EWDAP_fake_script)()
+local function WRFRGMG_fake_script() -- k9.LocalScript 
+	local script = Instance.new('LocalScript', k9)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(72.3, 1.5, -454.1))
+	end)
+end
+coroutine.wrap(WRFRGMG_fake_script)()
+local function WRFRGMG_fake_script() -- k9.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/edgeiy/infiniteyield/master/source"))()
+	end)
+end
+coroutine.wrap(WRFRGMG_fake_script)()
+local function HTKFVIF_fake_script() -- k7.LocalScript 
+	local script = Instance.new('LocalScript', k7)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-131.558, 1.693, -161.804))
+	end)
+end
+coroutine.wrap(HTKFVIF_fake_script)()
+local function COQLDBE_fake_script() -- k6.LocalScript 
+	local script = Instance.new('LocalScript', k6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-276.202, 1.693, -145.104))
+	end)
+end
+coroutine.wrap(COQLDBE_fake_script)()
+local function XFKUFO_fake_script() -- k10.LocalScript 
+	local script = Instance.new('LocalScript', k10)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local p = game.Players.LocalPlayer
+		local c = p.Character
+		c:PivotTo(CFrame.new(-145.958, 1.693, -233.329))
+	end)
+end
+coroutine.wrap(XFKUFO_fake_script)()
+local function JWARFDD_fake_script() -- X_2.LocalScript 
+	local script = Instance.new('LocalScript', X_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local tf = script.Parent.Parent
+		tf.Visible = false
+		
+	end)
+end
+coroutine.wrap(JWARFDD_fake_script)()
+local function WNIXM_fake_script() -- Keys.LocalScript 
+	local script = Instance.new('LocalScript', Keys)
+
+	local frame = script.Parent
+	local dragging = false
+	local dragInput, mousePos, framePos
+	
+	frame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			mousePos = input.Position
+			framePos = frame.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	frame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			local delta = input.Position - mousePos
+			frame.Position = UDim2.new(
+				framePos.X.Scale,
+				framePos.X.Offset + delta.X,
+				framePos.Y.Scale,
+				framePos.Y.Offset + delta.Y
+			)
+		end
+	end)
+	
+end
+coroutine.wrap(WNIXM_fake_script)()
